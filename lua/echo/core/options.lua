@@ -3,6 +3,9 @@ local opt = vim.opt
 -- Enable color mode for color schemes
 opt.termguicolors = true
 
+-- don't show mode in default line
+opt.showmode = false
+
 -- line numbers
 opt.relativenumber = true
 opt.number = true -- show absolute line number on current line
