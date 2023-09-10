@@ -1,12 +1,12 @@
-
-return {
-  "Shatur/neovim-ayu",
+local M = {
+  'Shatur/neovim-ayu',
   priority = 1000, -- load before all other plugins
   config = function()
-    local panel_bg = "#212733"
-    local colors = require("ayu.colors")
+    local panel_bg = '#212733' -- not a part of Ayu Dark
+    local colors = require('ayu.colors')
     colors.generate()
-    require("ayu").setup({
+
+    require('ayu').setup({
       mirage = false,
       -- Transparency overrides, see https://github.com/Shatur/neovim-ayu#transparency
       overrides = {
@@ -25,3 +25,5 @@ return {
   vim.cmd([[colorscheme ayu]])
   end,
 }
+
+return M
