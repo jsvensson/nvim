@@ -3,6 +3,8 @@ local M = {
   dependencies = { 'nvim-tree/nvim-web-devicons' },
   config = function()
     local lualine = require('lualine')
+    local colors = require('ayu.colors')
+    colors.generate()
 
     -- configure lazy pending update count
     local lazy_status = require('lazy.status')
@@ -29,7 +31,7 @@ local M = {
           {
             lazy_status.updates,
             cond = lazy_status.has_updates,
-            color = { fg = '#ff9e64' },
+            color = { fg = colors.keyword },
           },
           -- { "encoding" },
           -- { "fileformat" },
