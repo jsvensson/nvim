@@ -30,7 +30,7 @@ M.opts = {
       ['P'] = 'toggle_preview',
       ['S'] = false,
       ['c'] = { 'copy', config = { show_path = 'relative' } },
-      ['h'] = 'close_node',
+      ['h'] = false,
       ['l'] = 'open',
       ['m'] = { 'move', config = { show_path = 'relative' } },
       ['s'] = false,
