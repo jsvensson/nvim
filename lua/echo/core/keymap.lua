@@ -16,3 +16,6 @@ keymap.set("n", "<Leader>sx", "<Cmd>close<CR>", { desc = "Close current split" }
 -- diagnostics
 keymap.set("n", "<Leader>dn", "<Cmd>lua vim.diagnostic.goto_next()<CR>", { desc = "Go to next diagnostic" })
 keymap.set("n", "<Leader>dp", "<Cmd>lua vim.diagnostic.goto_prev()<CR>", { desc = "Go to previous diagnostic" })
+
+-- remove highlight
+keymap.set('n', '<Leader><Esc>', '<Cmd>noh<CR>', { desc = 'Remove highlight' })
