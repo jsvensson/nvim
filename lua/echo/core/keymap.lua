@@ -4,8 +4,8 @@ local keymap = vim.keymap
 vim.g.mapleader = " "
 
 -- copy/paste to system clipboard
-keymap.set({ "n", "v" }, "<Leader>y", "+y", { desc = "Yank to system clipboard" })
-keymap.set("n", "<Leader>p", "+p", { desc = "Put from system clipboard" })
+keymap.set({ 'n', 'v' }, '<Leader>y', '"+y', { desc = 'Yank to system clipboard' })
+keymap.set('n', '<Leader>p', '"+p', { desc = 'Put from system clipboard' })
 
 -- window management
 keymap.set("n", "<Leader>sv", "<C-w>v", { desc = "Split window vertically" })
