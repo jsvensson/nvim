@@ -41,7 +41,7 @@ M.opts = {
   },
   default_component_configs = {
     modified = {
-      symbol = '✚',
+      symbol = '',
       highlight = 'NeoTreeModified',
     },
     git_status = {
