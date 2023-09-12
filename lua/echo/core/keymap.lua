@@ -19,3 +19,9 @@ keymap.set("n", "<Leader>dp", "<Cmd>lua vim.diagnostic.goto_prev()<CR>", { desc 
 
 -- remove highlight
 keymap.set('n', '<Leader><Esc>', '<Cmd>noh<CR>', { desc = 'Remove highlight' })
+
+-- Second Leader layer
+
+-- number column management
+keymap.set('n', '<Leader><Leader>nn', '<Cmd>set number!<CR>', { desc = 'Toggle line number' })
+keymap.set('n', '<Leader><Leader>nr', '<Cmd>set relativenumber!<CR>', { desc = 'Toggle relative number' })
