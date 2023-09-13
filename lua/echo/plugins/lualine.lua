@@ -35,7 +35,7 @@ local M = {
           },
           -- { "encoding" },
           -- { "fileformat" },
-          -- { 'filetype' },
+          { 'filetype' },
         },
       },
     })
