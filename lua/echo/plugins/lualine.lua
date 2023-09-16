@@ -1,13 +1,13 @@
 local M = {
-  'nvim-lualine/lualine.nvim',
-  dependencies = { 'nvim-tree/nvim-web-devicons' },
+  "nvim-lualine/lualine.nvim",
+  dependencies = { "nvim-tree/nvim-web-devicons" },
   config = function()
-    local lualine = require('lualine')
-    local colors = require('ayu.colors')
+    local lualine = require("lualine")
+    local colors = require("ayu.colors")
     colors.generate()
 
     -- configure lazy pending update count
-    local lazy_status = require('lazy.status')
+    local lazy_status = require("lazy.status")
 
     lualine.setup({
       extensions = {
@@ -15,17 +15,15 @@ local M = {
       },
       sections = {
         lualine_a = {
-          'mode',
+          "mode",
         },
         lualine_b = {
-          { 'branch',
-            icon = '',
-          },
-          'diff',
-          'diagnostics',
+          { "branch", icon = "" },
+          "diff",
+          "diagnostics",
         },
         lualine_c = {
-          'filename',
+          "filename",
         },
         lualine_x = {
           {
@@ -35,7 +33,7 @@ local M = {
           },
           -- { "encoding" },
           -- { "fileformat" },
-          { 'filetype' },
+          { "filetype" },
         },
       },
     })

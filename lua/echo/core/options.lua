@@ -13,7 +13,7 @@ opt.number = true -- show absolute line number on current line
 -- always show space for diagnostics in gutter
 opt.signcolumn = "yes"
 
-opt.fillchars = { eob = ' ' }
+opt.fillchars = { eob = " " }
 
 -- tabs/indentation
 opt.tabstop = 2

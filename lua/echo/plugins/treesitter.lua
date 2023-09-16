@@ -10,8 +10,11 @@ M.opts = {
     "dockerfile",
     "fish",
     "gitignore",
-    "go", "gomod", "gosum",
-    "json", "json5",
+    "go",
+    "gomod",
+    "gosum",
+    "json",
+    "json5",
     "lua",
     "markdown",
     "terraform",
@@ -22,7 +25,7 @@ M.opts = {
   },
   indent = {
     enable = true,
-  }
+  },
 }
 
 M.config = function(_, opts)

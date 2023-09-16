@@ -17,12 +17,12 @@ return {
             ["<C-k>"] = actions.move_selection_previous,
             ["<C-j>"] = actions.move_selection_next,
             ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
-          }
-        }
-      }
+          },
+        },
+      },
     })
 
-    telescope.load_extension("fzf");
+    telescope.load_extension("fzf")
 
     -- set keymaps
     local keymap = vim.keymap
@@ -32,10 +32,12 @@ return {
     keymap.set("n", "<Leader>fr", "<Cmd>Telescope oldfiles<CR>", { desc = "Fuzzy find recent files" })
     keymap.set("n", "<Leader>fs", "<Cmd>Telescope live_grep<CR>", { desc = "Find string in cwd" })
     keymap.set("n", "<Leader>fc", "<Cmd>Telescope grep_string<CR>", { desc = "Find string under cursor in cwd" })
-    keymap.set('n', '<Leader>fb', '<Cmd>Telescope buffers<CR>', { desc = 'Find buffer' })
+    keymap.set("n", "<Leader>fb", "<Cmd>Telescope buffers<CR>", { desc = "Find buffer" })
+
+    -- color scheme switcher
+    keymap.set("n", "<Leader><Leader>tt", "<Cmd>Telescope colorscheme<CR>", { desc = "Select color scheme" })
 
     -- -- diagnostics
     keymap.set("n", "<Leader>dd", "<Cmd>Telescope diagnostics<CR>")
-
-  end
+  end,
 }

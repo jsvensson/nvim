@@ -7,10 +7,10 @@ local M = {
   end,
   opts = {
     key_labels = {
-      ['<leader>'] = '<Leader>',
-      ['<space>'] = '<Space>',
+      ["<leader>"] = "<Leader>",
+      ["<space>"] = "<Space>",
     },
-  }
+  },
 }
 
 return M
