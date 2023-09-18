@@ -23,3 +23,6 @@ opt.wrap = false
 
 -- turn off swapfile
 opt.swapfile = false
+
+-- disable horizontal mouse scrolling
+opt.mousescroll = "ver:1,hor:0"
