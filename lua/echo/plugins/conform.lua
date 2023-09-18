@@ -11,6 +11,7 @@ M.config = function()
     },
     -- configure specific file formats
     formatters_by_ft = {
+      fish = { "fish_indent" },
       go = { "gofumpt" },
       lua = { "stylua" },
       tf = { "terraform_fmt" },
