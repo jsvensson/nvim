@@ -8,7 +8,7 @@ opt.showmode = false
 
 -- line numbers
 opt.relativenumber = true
-opt.number = true -- show absolute line number on current line
+opt.number = false -- absolute line number on current line
 
 -- always show space for diagnostics in gutter
 opt.signcolumn = "yes"
