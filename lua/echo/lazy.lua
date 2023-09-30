@@ -19,4 +19,11 @@ require("lazy").setup({
   { import = "echo.plugins.colors" },
 }, {
   install = {},
+  change_detection = {
+    notify = false,
+  },
+  checker = {
+    enabled = true,
+    notify = false,
+  },
 })
