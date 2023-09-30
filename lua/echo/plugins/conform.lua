@@ -1,22 +1,35 @@
 local M = {
   "stevearc/conform.nvim",
+  event = {
+    "BufReadPre",
+    "BufNewFile",
+  },
 }
 
 M.config = function()
-  require("conform").setup({
-    format_on_save = {
-      -- These options will be passed to conform.format()
-      timeout_ms = 500,
-      lsp_fallback = true,
-    },
+  local conform = require("conform")
+
+  local on_save = {
+    async = false,
+    timeout_ms = 500,
+    lsp_fallback = true,
+  }
+
+  conform.setup({
+    format_on_save = on_save,
     -- configure specific file formats
     formatters_by_ft = {
       fish = { "fish_indent" },
       go = { "goimports", "gofumpt" },
       lua = { "stylua" },
-      tf = { "terraform_fmt" },
+      markdown = { "prettier" },
+      terraform = { "terraform_fmt" },
     },
   })
+
+  vim.keymap.set({ "n", "v" }, "<Leader>cf", function()
+    conform.format(on_save)
+  end, { desc = "Format code" })
 end
 
 return M
