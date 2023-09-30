@@ -13,6 +13,7 @@ opt.number = false -- absolute line number on current line
 -- always show space for diagnostics in gutter
 opt.signcolumn = "yes"
 
+-- hide tildes after EOF, line numbers provide that info
 opt.fillchars = { eob = " " }
 
 -- tabs/indentation
