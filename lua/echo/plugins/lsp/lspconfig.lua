@@ -31,22 +31,22 @@ return {
       keymap.set("n", "gR", vim.lsp.buf.declaration, opts) -- show definition, references
 
       opts.desc = "Go to declaration"
-      keymap.set("n", "gD", "<cmd>Telescope lsp_definitions<CR>", opts)
+      keymap.set("n", "gD", "<Cmd>Telescope lsp_definitions<CR>", opts)
 
       opts.desc = "Show LSP definitions"
-      keymap.set("n", "gi", "<cmd>Telescope lsp_implementations<CR>", opts)
+      keymap.set("n", "gi", "<Cmd>Telescope lsp_implementations<CR>", opts)
 
       opts.desc = "See available code actions"
-      keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts)
+      keymap.set({ "n", "v" }, "<Leader>ca", vim.lsp.buf.code_action, opts)
 
       opts.desc = "Smart rename"
-      keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
+      keymap.set("n", "<Leader>rn", vim.lsp.buf.rename, opts)
 
       opts.desc = "Show buffer diagnostics"
-      keymap.set("n", "<leader>D", "<cmd>Telescope diagnostics bufnr=0<CR>", opts)
+      keymap.set("n", "<Leader>D", "<cmd>Telescope diagnostics bufnr=0<CR>", opts)
 
       opts.desc = "Show line diagnostics"
-      keymap.set("n", "<leader>d", vim.diagnostic.open_float, opts)
+      keymap.set("n", "<Leader>d", vim.diagnostic.open_float, opts)
     end -- end on_attach
 
     -- enable autocompletion for every LSP config

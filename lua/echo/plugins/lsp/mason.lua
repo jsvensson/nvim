@@ -1,4 +1,4 @@
-return {
+local M = {
   "williamboman/mason.nvim",
   dependencies = {
     "williamboman/mason-lspconfig.nvim",
@@ -24,3 +24,5 @@ return {
     })
   end,
 }
+
+return M
