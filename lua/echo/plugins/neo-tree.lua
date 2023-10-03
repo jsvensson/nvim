@@ -38,20 +38,32 @@ M.opts = {
       ["u"] = "navigate_up",
       ["z"] = false,
     },
-  },
-  default_component_configs = {
-    modified = {
-      symbol = "",
-      highlight = "NeoTreeModified",
+    filesystem = {
+      follow_current_file = {
+        enabled = true,
+        leave_dirs_open = false,
+      },
     },
-    git_status = {
-      symbols = {
-        modified = "", -- already visible with filename color
-        untracked = "",
-        ignored = "",
-        unstaged = "󰄱",
-        staged = "",
-        conflict = "",
+    buffers = {
+      follow_current_file = {
+        enabled = true,
+        leave_dirs_open = false,
+      },
+    },
+    default_component_configs = {
+      modified = {
+        symbol = "",
+        highlight = "NeoTreeModified",
+      },
+      git_status = {
+        symbols = {
+          modified = "", -- already visible with filename color
+          untracked = "",
+          ignored = "",
+          unstaged = "󰄱",
+          staged = "",
+          conflict = "",
+        },
       },
     },
   },
