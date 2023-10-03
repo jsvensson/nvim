@@ -13,6 +13,18 @@ M.opts = {
   lazy_nvim = {
     auto_register = true,
   },
+  which_key = {
+    auto_register = true,
+  },
 }
+
+M.config = function()
+  require("legendary").setup({
+    keymaps = {
+      -- Show Legendary itself
+      { "<C-p>", ":Legendary<CR>", description = "Show command palette" },
+    },
+  })
+end
 
 return M
