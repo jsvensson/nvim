@@ -5,7 +5,9 @@ local M = {
     "BufNewFile",
   },
   build = ":TSUpdate",
-  dependencies = { "RRethy/nvim-treesitter-textsubjects" },
+  dependencies = {
+    "nvim-treesitter/nvim-treesitter-textobjects",
+  },
 }
 
 M.opts = {
