@@ -99,7 +99,7 @@ M.config = function()
 
   local move = require("nvim-treesitter.textobjects.repeatable_move")
 
-  vim.keymap.set({ "n", "x", "o" }, ".", move.repeat_last_move)
+  vim.keymap.set({ "n", "x", "o" }, ";", move.repeat_last_move)
   vim.keymap.set({ "n", "x", "o" }, ",", move.repeat_last_move_opposite)
 end
 
