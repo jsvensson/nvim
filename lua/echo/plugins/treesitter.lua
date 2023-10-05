@@ -1,6 +1,9 @@
 local M = {
   "nvim-treesitter/nvim-treesitter",
-  event = "BufReadPost",
+  event = {
+    "BufReadPre",
+    "BufNewFile",
+  },
   build = ":TSUpdate",
   dependencies = { "RRethy/nvim-treesitter-textsubjects" },
 }
@@ -25,6 +28,15 @@ M.opts = {
   },
   indent = {
     enable = true,
+  },
+  incremental_selection = {
+    enable = true,
+    keymaps = {
+      init_selection = "<Tab>",
+      node_incremental = "<Tab>",
+      node_decremental = "<S-Tab>",
+      scope_incremental = false,
+    },
   },
 }
 
