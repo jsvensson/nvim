@@ -1,5 +1,6 @@
 local M = {
   "stevearc/conform.nvim",
+  version = "*",
   event = {
     "BufReadPre",
     "BufNewFile",
