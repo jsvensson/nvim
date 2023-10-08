@@ -1,7 +1,7 @@
 local M = {
   "nvim-neo-tree/neo-tree.nvim",
-  event = "BufEnter",
-  branch = "v3.x",
+  version = "v3.*",
+  lazy = false,
   dependencies = {
     "nvim-lua/plenary.nvim",
     "nvim-tree/nvim-web-devicons",
@@ -39,6 +39,11 @@ M.opts = {
       ["z"] = false,
     },
     filesystem = {
+      filtered_items = {
+        always_show = {
+          ".gitignore",
+        },
+      },
       follow_current_file = {
         enabled = true,
         leave_dirs_open = false,
