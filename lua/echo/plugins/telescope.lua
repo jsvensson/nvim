@@ -11,7 +11,6 @@ local M = {
 M.keys = {
   -- file navigation
   { "<Leader>ff", "<Cmd>Telescope find_files<CR>", desc = "Fuzzy find files in cwd" },
-  { "<Leader>fR", "<Cmd>Telescope oldfiles<CR>", desc = "Fuzzy find recent files" },
   { "<Leader>fs", "<Cmd>Telescope live_grep<CR>", desc = "Find string in cwd" },
   { "<Leader>fc", "<Cmd>Telescope grep_string<CR>", desc = "Find string under cursor in cwd" },
   { "<Leader>fb", "<Cmd>Telescope buffers<CR>", desc = "Find buffer" },
@@ -31,6 +30,7 @@ M.config = function()
     defaults = {
       mappings = {
         i = {
+          ["<C-h>"] = "which_key",
           ["<C-d>"] = actions.delete_buffer,
           ["<C-k>"] = actions.move_selection_previous,
           ["<C-j>"] = actions.move_selection_next,
