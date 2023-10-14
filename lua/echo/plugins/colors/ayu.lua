@@ -1,5 +1,6 @@
 local M = {
   "Shatur/neovim-ayu",
+  lazy = true,
   priority = 1000, -- load before all other plugins
   config = function()
     local colors = require("ayu.colors")
@@ -30,8 +31,6 @@ local M = {
         }
       end,
     })
-
-    vim.cmd([[colorscheme ayu]])
   end,
 }
 
