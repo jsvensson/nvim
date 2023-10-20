@@ -1,7 +1,10 @@
 local M = {
   "williamboman/mason.nvim",
   dependencies = {
-    "williamboman/mason-lspconfig.nvim",
+    {
+      "williamboman/mason-lspconfig.nvim",
+      version = "v1.*",
+    },
   },
   config = function()
     local mason = require("mason")
