@@ -1,6 +1,9 @@
 local M = {
   "zbirenbaum/copilot.lua",
-  event = "InsertEnter",
+  event = {
+    "BufReadPre",
+    "BufNewFile",
+  },
 }
 
 M.config = function()
