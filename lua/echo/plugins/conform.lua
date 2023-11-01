@@ -25,6 +25,7 @@ M.config = function()
       lua = { "stylua" },
       markdown = { "prettier" },
       terraform = { "terraform_fmt" },
+      yaml = { "yamlfmt" },
     },
   })
 
