@@ -8,6 +8,12 @@ local M = {
   },
 }
 
+M.keys = {
+  -- unbind LazyVim recent file pickers, using frecency instead
+  { "<Leader>fr", false },
+  { "<Leader>fR", false },
+}
+
 M.config = function()
   local telescope = require("telescope")
   local actions = require("telescope.actions")
