@@ -9,3 +9,6 @@ opt.background = "dark"
 
 -- absolute number on current line?
 opt.number = true
+
+-- highlight current line?
+opt.cursorline = false
