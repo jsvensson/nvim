@@ -12,6 +12,7 @@ M.keys = {
   -- unbind LazyVim recent file pickers, using frecency instead
   { "<Leader>fr", false },
   { "<Leader>fR", false },
+  { "<Leader>co", "<Cmd>Telescope aerial<CR>", mode = { "n" }, desc = "Show outline" },
 }
 
 M.config = function()
