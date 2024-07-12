@@ -40,9 +40,6 @@ M.config = function()
     extensions = {
       frecency = {
         show_scores = true,
-        -- issue where files under .git are still shown
-        -- https://github.com/nvim-telescope/telescope-frecency.nvim/issues/211
-        workspace_scan_cmd = "LUA",
       },
     },
   })
