@@ -12,3 +12,6 @@ opt.number = true
 
 -- highlight current line?
 opt.cursorline = false
+
+-- Don't cut/copy to OS clipboard with native vim commands
+opt.clipboard = ""
